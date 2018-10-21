@@ -6,71 +6,17 @@ backend:
   public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
   collections:
 
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
+  collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-
-      - label: "Title"
-        name: "title"
-        widget: "string"
-
-      - label: "Publish Date"
-        name: "date"
-        required: false
-        widget: "datetime"
-
-      - label: "Categories"
-        name: "categories"
-        required: false
-        widget: "list"
-
-      - label: "Tags"
-        name: "tags"
-        required: false
-        widget: "list"
-
-      - label: "Keywords"
-        name: "keywords"
-        required: false
-        widget: "list"
-
-      - label: "Auto Thumbnail Image"
-        name: "autoThumbnailImage"
-        required: false
-        widget: "boolean"
-        default: false
-
-      - label: "Thumbnail Image Position"
-        name: "thumbnailImagePosition"
-        required: false
-        widget: "select"
-        default: "top"
-        options: ["left", "top", "right"]
-        
-      - label: "Thumbnail Image"
-        name: "thumbnailImage"
-        required: false
-        widget: "image"
-
-      - label: "Cover Image"
-        name: "coverImage"
-        required: false
-        widget: "image"
-        default: "/images/uploads/cover-post.jpg"
-        
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        
-
-  - name: "layouts"
-    label: "Layouts"
-    folder: "_layouts"
-    extension: "html"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-      - {label: "Title", name: "title", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Categories", name: "categories", widget: "string"}
+    meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
