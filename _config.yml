@@ -7,7 +7,7 @@ title:            mueslii
 tagline:          'хоп!'
 description:      'мудрые, вкусные'
 url:              https://mueslii.github.io
-baseurl:          none
+baseurl:          'muesliii.github.io'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -19,7 +19,7 @@ author:
   url:            https://twitter.com/fongandrewc
 
 paginate:         5
-# paginate_path:    '/page:num'
+# paginate_path:    'blog/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
 # https://help.github.com/articles/configuring-jekyll-plugins/
@@ -30,7 +30,7 @@ plugins:
 
 # Sidebar link settings
 sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+# sidebar_blog_link:  'blog'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
