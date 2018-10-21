@@ -1,0 +1,9 @@
+---
+label: '11111'
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: '11111111'
+  label: '1111111'
+  description: '1111111'
