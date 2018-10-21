@@ -12,5 +12,4 @@ fields:
   label: '1111111111111'
   default: '111111111111'
 pages:
-- _posts/2018-10-21-test.md
 - _posts/2018-10-21-1111111111.md
