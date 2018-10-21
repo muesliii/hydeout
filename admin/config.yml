@@ -65,7 +65,6 @@ backend:
         name: "body"
         widget: "markdown"
         
-        - name: "layouts"
 
   - name: "layouts"
     label: "Layouts"
