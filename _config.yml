@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            '![](/assets/logo.jpg)'
+title:            ![test](/assets/logo.jpg)
 tagline:          'хоп!'
 description:      'мудрые, вкусные'
 url:              https://mueslii.github.io
