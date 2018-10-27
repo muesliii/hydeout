@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            [placeholder](https://pp.userapi.com/c847124/v847124728/335fb/C4CxibtpFzY.jpg)
+title:            [href="{{ '/' | absolute_url }}"><img src="https://pp.userapi.com/c847124/v847124728/335fb/C4CxibtpFzY.jpg"></a>
 tagline:          'хоп!'
 description:      'мудрые, вкусные'
 url:              https://mueslii.github.io
