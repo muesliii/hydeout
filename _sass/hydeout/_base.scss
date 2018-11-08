@@ -38,8 +38,8 @@ a {
 
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
-  &:focus {
-    text-decoration: underline;
+
+  
   }
 
   strong {
@@ -48,7 +48,7 @@ a {
 }
 
 img {
-  display: true;
+  display: none;
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
