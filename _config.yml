@@ -13,7 +13,7 @@ highlighter: rouge
 tagline: мудрые, вкусные
 description: мудрые, вкусные
 url: https://mueslii.github.io
-baseurl: ''
+baseurl: ' '
 author:
   name: Andrew Fong
   url: https://twitter.com/fongandrewc
