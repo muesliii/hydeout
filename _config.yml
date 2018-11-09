@@ -10,7 +10,7 @@ collections:
     output: true
 markdown: kramdown
 highlighter: rouge
-tagline: мудрые, вкусные
+tagline: мудрые, вкусные!
 description: мудрые, вкусные
 url: https://mueslii.github.io
 baseurl: ''
